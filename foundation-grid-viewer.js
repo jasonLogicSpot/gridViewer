@@ -84,6 +84,7 @@
             'max-width': gridSettingsMaxSize,
             'margin': '0 auto',
             'opacity': gridSettingsOpacity,
+			'height': '100%',
         });
 
         $('.gridColumn').css({
@@ -92,7 +93,8 @@
             'padding-left': gridSettingsGutterSize / 2,
             'padding-right': gridSettingsGutterSize / 2,
             'box-sizing': 'border-box',
-        });
+			'height': '100%',
+		});
     };
 
     // Load jQuery from CDN if needed
@@ -100,7 +102,7 @@
         var head = document.getElementsByTagName("head")[0],
             jQueryScript = document.createElement("script");
         jQueryScript.type = "text/javascript";
-        jQueryScript.src = "http://code.jquery.com/jquery-1.10.0.min.js";
+        jQueryScript.src = "https://code.jquery.com/jquery-1.10.0.min.js";
         jQueryScript.onload = function() { init(window.jQuery); };
         head.appendChild(jQueryScript);
     } else {
