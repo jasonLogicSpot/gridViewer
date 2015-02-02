@@ -1,0 +1,19 @@
+// Define and make changes to the Foundation settings, you can also use any variables from your settings
+@import "foundation-settings";
+
+// Comment out this import if you don't want to use normalize
+@import "vendor/normalize";
+
+// Comment out this import if you are customizing you imports below
+@import "vendor/foundation";
+
+// Import DropZone
+@import
+	"vendor/dropzone/basic",
+	"vendor/dropzone/dropzone";
+// Pulls in custom components and 
+@import	
+	"components/global",
+	"components/header",
+	"components/footer",
+	"components/index";

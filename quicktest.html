@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>GridViewer Test</title>
+		<link href="/css/app.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="header full-height">
+			<div class="vertical-center">
+				<div class="row">
+					<div class="small-12 large-10 large-offset-1 columns text-center">
+						<h1>Quick Grid Tester</h1>
+						<h5>Just drag and drop an image file (jpeg, png) below</h5>
+						<h3>and we'll do some amazing grid magic!</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 columns">
+						<form class="dropzone" id="imageUpload">
+							<div class="fallback">
+								<input name="file" type="file" multiple />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-viewer full-height hide">
+			<div class="grid-viewer-image">
+			</div>
+		</div>
+		<script type="text/javascript" src="/js/vendor/jquery.js"></script>
+		<script type="text/javascript" src="/js/foundation.min.js"></script>
+		<script type="text/javascript" src="/js/dropzone.js"></script>
+		<script type="text/javascript" src="/js/scripts.js"></script>
+		<script type="text/javascript" src="/foundation-grid-viewer.js"></script>
+	</body>
+</html>

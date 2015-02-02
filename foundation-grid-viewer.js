@@ -5,7 +5,7 @@
         gridHtml += '<div class="gridRow">';
         gridHtml += '</div>';
         gridHtml += '</div>';
-        $("body").prepend(gridHtml);
+        $(".grid-viewer").prepend(gridHtml);
 
         var gridHtml;
         gridHtml = '<div class="gridOptions">';
@@ -15,7 +15,7 @@
         gridHtml += '<label for="gridCollapse">Collapse Grid? <input type="checkbox" id="gridCollapse" name="gridCollapse" value="1" /></label>';
         gridHtml += '<label for="gridOpacity">Grid Opacity <input type"text" id="gridOpacity" name="gridOpacity" value="0.2" /></label>';
         gridHtml += '</div>';
-        $("body").prepend(gridHtml);
+        $(".grid-viewer").prepend(gridHtml);
 
         applyStyling();
 

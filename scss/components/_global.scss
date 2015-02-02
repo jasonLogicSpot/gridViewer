@@ -1,0 +1,23 @@
+.header {
+	background-color: rgb(191, 126, 114);
+	display: table;
+	width: 100%;
+	.vertical-center {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	h1, h3, h5 {
+		color: rgb(255, 255, 255);
+	}
+}
+.grid-viewer {
+	text-align: center;
+	position: relative;	
+	img {
+		width: auto;
+		max-width: none;
+		display: block;
+		margin: 0 auto;
+		padding-top: 4.7rem;
+	}
+}
