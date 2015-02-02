@@ -1,4 +1,4 @@
-(function(){
+(function($){
     var init = function($, settings){
         var gridHtml;
         gridHtml = '<div class="gridContainer">';
@@ -19,7 +19,7 @@
 
         applyStyling();
 
-        $('.gridOptions input').on('change keyup click', function(){
+        $('.gridOptions input').on('change keyup click blur', function(){
             applyStyling();
         });
     };
@@ -100,7 +100,7 @@
     // Load jQuery from CDN if needed
     if (!window.jQuery) {
         var head = document.getElementsByTagName("head")[0],
-            jQueryScript = document.createElement("script");
+		jQueryScript = document.createElement("script");
         jQueryScript.type = "text/javascript";
         jQueryScript.src = "https://code.jquery.com/jquery-1.10.0.min.js";
         jQueryScript.onload = function() { init(window.jQuery); };
@@ -108,4 +108,4 @@
     } else {
         init(window.jQuery);
     }
-})();
+})(jQuery);
